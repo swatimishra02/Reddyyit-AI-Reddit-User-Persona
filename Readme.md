@@ -55,9 +55,14 @@ This will start the Flask server and you can access the app at `http://localhost
 
 ### Demo
 
-- Enter a reddit profile username
+[![Watch the demo](https://raw.githubusercontent.com/swatimishra02/Reddyyit/main/assets/thumbnail.png)](https://youtu.be/7z4DfkhEXsM)
 
-🙌 Acknowledgements
+### Example 
+
+[📄 View Persona for u/kojied (PDF)](https://github.com/your-username/your-repo-name/raw/main/path/to/Persona%20for%20u_kojied.pdf)
+
+
+ Acknowledgements
 -------------------
 
 - [OpenRouter](https://openrouter.ai/) – API gateway for accessing various open-source LLMs
@@ -66,4 +71,4 @@ This will start the Flask server and you can access the app at `http://localhost
 - [Mistral-7B (via OpenRouter)](https://openrouter.ai/models/mistralai/mistral-7b-instruct) – Open-weight LLM used for persona generation
 
 
-[![Watch the demo](https://raw.githubusercontent.com/swatimishra02/Reddyyit/main/assets/thumbnail.png)](https://youtu.be/7z4DfkhEXsM)
+
