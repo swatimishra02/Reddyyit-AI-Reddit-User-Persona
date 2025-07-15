@@ -66,4 +66,4 @@ This will start the Flask server and you can access the app at `http://localhost
 - [Mistral-7B (via OpenRouter)](https://openrouter.ai/models/mistralai/mistral-7b-instruct) – Open-weight LLM used for persona generation
 
 
-[![Watch the video](https://raw.githubusercontent.com/swatimishra02/Reddyyit/main/assets/thumbnail.png)](https://raw.githubusercontent.com/swatimishra02/Reddyyit/main/assets/reddyit%20demo-%20Made%20with%20Clipchamp.mp4)
+[![Watch the demo](https://raw.githubusercontent.com/swatimishra02/Reddyyit/main/assets/thumbnail.png)](https://youtu.be/7z4DfkhEXsM)
