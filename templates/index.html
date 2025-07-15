@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reddit Persona Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="home-container">
+    <h1 class="title">🔍 Discover Who You Really Are on Reddit</h1>
+    <p class="subtitle">Paste your Reddit username and let AI build your digital persona from your posts & comments.</p>
+
+    <form method="POST" class="form">
+      <input type="text" name="username" placeholder="Enter your Reddit username (e.g., u/snoo)" required>
+      <button type="submit">Generate My Persona →</button>
+    </form>
+
+    <footer class="footer-note">🧠 Powered by Mistral & Claude via OpenRouter</footer>
+  </div>
+</body>
+</html>

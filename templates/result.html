@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Persona for u/{{ username }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="persona-container">
+    <h1 class="page-title">🎭 u/{{ username }}'s Reddit Persona</h1>
+
+    {% for block in persona.split('\n\n') %}
+      {% if ':' in block %}
+        {% set title = block.split(':')[0].strip() %}
+        {% set content = block.split(':', 1)[1].strip() %}
+
+        {% if "Name" in title %}
+          <div class="section user-info">
+            <h2>🧑 About This Human</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Quote" in title %}
+          <div class="section quote">
+            <h2>🗣️ Quote That Sums Them Up</h2>
+            <blockquote>{{ content }}</blockquote>
+          </div>
+        {% elif "Motivations" in title %}
+          <div class="section">
+            <h2>🚀 What Drives Them</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Preferences" in title %}
+          <div class="section">
+            <h2>🎨 Their Favorite Things</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Frustrations" in title %}
+          <div class="section">
+            <h2>😤 What Annoys Them</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Behaviors" in title %}
+          <div class="section">
+            <h2>📊 Habits & Behaviors</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Goals" in title %}
+          <div class="section">
+            <h2>🎯 Goals & Needs</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "Personality" in title %}
+          <div class="section">
+            <h2>🧬 Personality Type</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% elif "CITED EXAMPLES" in title %}
+          <div class="section cited-examples">
+            <h2>📌 Cited Reddit Moments</h2>
+            {% for line in content.split('\n') %}
+              {% if line.strip() %}
+                <div class="example-card">{{ line.strip() }}</div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="section">
+            <h2>{{ title }}</h2>
+            <p>{{ content | replace('\n', '<br>') | safe }}</p>
+          </div>
+        {% endif %}
+      {% else %}
+        <p class="intro">{{ block }}</p>
+      {% endif %}
+    {% endfor %}
+
+    <a href="/" class="back-btn">← Generate Another Persona</a>
+  </div>
+
+  <button onclick="window.print()" class="back-btn">🖨️ Print or Save as PDF</button>
+  
+</body>
+</html>
