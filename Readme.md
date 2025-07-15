@@ -59,7 +59,7 @@ This will start the Flask server and you can access the app at `http://localhost
 
 ### Example 
 
-[📄 View Persona for u/kojied (PDF)](https://github.com/your-username/your-repo-name/raw/main/path/to/Persona%20for%20u_kojied.pdf)
+[📄 View Persona for u/kojied (PDF)](https://github.com/swatimishra02/Reddyyit/raw/main/Persona_for_u_kojied.pdf)
 
 
  Acknowledgements
