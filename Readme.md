@@ -1,4 +1,4 @@
-# Reddyyit : Find out your persona on Reddit
+# Reddyyit : Find out your Persona on Reddit
 
 Reddit is a website where redditors can be a part of their favourite sub reddits, share their ideas and opinions on the topics they're a nerd about, while having a quirky anonimity on the website. This project is a fun way to analyse the reddit profiles of users using LLMs, allowing AI to dissect the anonymous presence of users and gives insight on what actually makes a redditor, a redditor.
 
@@ -59,7 +59,7 @@ This will start the Flask server and you can access the app at `http://localhost
 
 ### Example 
 
-[📄 View Persona for u/kojied (PDF)](https://github.com/swatimishra02/Reddyyit/raw/main/Persona_for_u_kojied.pdf)
+[📄 View Persona for u/kojied (PDF)](https://github.com/swatimishra02/Reddyyit-AI-Reddit-User-Persona/blob/main/Persona_for_u_kojied.pdf)
 
 
  Acknowledgements
